@@ -34,7 +34,7 @@
 
   tasks:
     - name: List OLVM VM's {{ olvm_name }} by Cluster {{ olvm_cluster }}
-      ovirt_vm_info:
+      ovirt.ovirt.ovirt_vm_info:
         auth:
           hostname: "{{ olvm_fqdn }}"
           username: "{{ olvm_user }}"
